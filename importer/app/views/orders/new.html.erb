@@ -1,0 +1,6 @@
+<h2>Please select a data file to import orders</h2>
+
+<%= form_tag import_orders_path, :multipart => true do %>
+  <%= file_field :orders, :data_file %>
+  <%= submit_tag "Import!" %>
+<% end %>
